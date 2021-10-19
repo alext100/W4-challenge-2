@@ -1,5 +1,6 @@
 import "./App.css";
 import AnswerBox from "./components/AnswerBox";
+import HangManBox from "./components/HangManBox";
 import Letter from "./components/Letter";
 
 function App() {
@@ -10,10 +11,15 @@ function App() {
 
   return (
     <>
+
       <div className="container">
         <h1>Ahorcado</h1>
         <AnswerBox index={palabra.indexOf(palabra[2])} letter={palabra[2]} worldLength={5} />
         <div className="letters-container">{letters.map((letter, index) => (<Letter key={index} letter={letter} />))}</div>
+
+      <HangManBox></HangManBox>
+      <Letter letter={"S"} />
+
 
       </div>
     </>
