@@ -1,15 +1,17 @@
 import "./AnswerBox.css"
 
-const AnswerBox = ({ letter, worldLength }) => {
+const AnswerBox = ({ letter, worldLength, index }) => {
 
     const lettersCamp = new Array(worldLength).fill(" ");
-    console.log('lettersCamp: ', lettersCamp);
+    lettersCamp[index] = letter
 
     return (
         <div className="answer-box">
-            {lettersCamp.map((letter) => {
-                <div className="answer-box--camp">{letter}</div>
-            })}
+            {lettersCamp.map((emptyElement, i) => (
+                <div key={i} className="answer-box--camp">
+                    <span className="answer-box-letter">{emptyElement}</span>
+                </div>
+            ))}
         </div>
     );
 }
