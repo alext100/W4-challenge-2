@@ -7,3 +7,6 @@
   font-size: large;
   border: 1px solid #000;
 }
+.letters-container {
+  display: flex;
+}
