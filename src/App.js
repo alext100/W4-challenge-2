@@ -1,9 +1,13 @@
-import './App.css';
-import AnswerBox from './components/AnswerBox';
+import "./App.css";
+import AnswerBox from "./components/AnswerBox";
+import Letter from "./components/Letter";
 
 function App() {
   return (
-    <AnswerBox letter={"S"} worldLength={10} />
+    <>
+      <Letter letter={"S"} />
+      <AnswerBox letter={"S"} worldLength={10} />
+    </>
   );
 }
 
