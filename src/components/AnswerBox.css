@@ -1,10 +1,20 @@
 .answer-box {
-  width: 300px;
-  height: 150px;
+  width: 600px;
+  height: 250px;
   background-color: azure;
-  border: 1px dotted;
+  border: 1px dotted black;
+  display: flex;
 }
 .answer-box--camp {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 10px;
+  font-size: 50px;
+  position: relative;
+}
+.answer-box-letter {
+  top: -19px;
+  position: relative;
+  left: 10px;
 }
